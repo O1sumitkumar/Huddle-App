@@ -159,6 +159,7 @@ const ChatScreen = () => {
           },
           date: serverTimestamp(),
         });
+
         // here we update for second user
         await updateDoc(doc(db, "userChats", sender?.uid), {
           [combinedId]: {
